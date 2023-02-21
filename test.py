@@ -20,6 +20,5 @@ def get_pointer_address(base_address, offsets = []):
             pm.read_int(offset)
     addr = addr + offsets[-1]
     return addr
-
-while True:
-    pm.write_int(get_pointer_address(pm.base_address + 0x00325A70, offsets=[0x7B8, 0x418, 0x70, 0x50, 0x50, 0x1A8, 0x7F8]), 10)
+pm.write_int(get_pointer_address(pm.base_address + 0x00325A70, offsets=[0x7B8, 0x418, 0x70, 0x50, 0x50, 0x1A8, 0x7F8]), 10)
+pm.close_process()
