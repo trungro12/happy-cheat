@@ -1,0 +1,5 @@
+/pointermap/*
+/env/*
+/build/*
+/dist/*
+*.spec
